@@ -2,12 +2,12 @@
     <div id="app">
         <div id="nav"> 
             <ul class="menu">
-                <li><router-link to="/" class="active">Home</router-link></li>
+                <li><router-link to="/">Home</router-link></li>
                 <li><router-link to="/sobre">Sobre</router-link></li>
                 <li><router-link to="/calendario">Calendário</router-link></li>
                 <li><router-link to="/contato">Contato</router-link></li>
             </ul>
-            <a href="javascript:void(0);" class="showmenu" onclick="myFunction()">
+            <a href="javascript:void(0);" class="showmenu" v-on:click="myFunction()">
             <div class="button">
 
                 <div></div>
@@ -19,7 +19,7 @@
     <router-view></router-view>
     </div>
 </template>
-
+ 
 <style>
 :root {
     --main-bg-color: #EEE;
@@ -40,7 +40,14 @@ html, body {
     width: 100%;
     list-style: none;
     background-color: var(--nav-bg-color, #CCC);
-    padding: 30px;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav ul li {
+    text-align: center;
 }
 
 #nav ul li:not(:first-child) {
@@ -52,12 +59,19 @@ html, body {
 }
 
 #nav .button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#nav .button {
     float: right;
     display: block;
 }
 
 #nav ul li {
     display: block;
+    padding: 5px;
 }
 
 #nav .button div {
@@ -81,19 +95,29 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: var(--nav-bg-color, #CCC);
-    padding: 30px;
+    text-align: center;
     width: 200px;
+    height: default;
+}
+
+#nav ul li:not(:first-child) {
+    display: block;
 }
 }
 </style>
 
 <script>
-    function myFunction() {
-      var x = document.getElementById("nav");
-      if (x.className === "nav") {
-        x.className += " responsive";
-      } else {
-        x.className = "nav";
-      }
-    } 
+    export default {
+        name: 'App',
+        methods: {
+            myFunction: function() {
+              var x = document.getElementById("nav");
+              if (x.className === "nav") {
+                x.className += " responsive";
+              } else {
+                x.className = "nav";
+              }
+            } 
+        }
+    }
 </script>
