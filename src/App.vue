@@ -35,8 +35,6 @@ html, body {
 }
 
 #nav {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     list-style: none;
     background-color: var(--nav-bg-color, #CCC);
@@ -71,7 +69,7 @@ html, body {
 
 #nav ul li {
     display: block;
-    padding: 5px;
+    padding: 10px;
 }
 
 #nav .button div {
