@@ -37,10 +37,17 @@ html, body {
     width: 100%;
     list-style: none;
     background-color: var(--nav-bg-color, #CCC);
+    border-style: solid;
+    border-width: 0 0 1px 0;
 }
 
 #nav a {
     text-decoration: none;
+    color: #3b3b3b;
+}
+
+#nav a:hover, #nav a:active {
+    color: #fefefe
 }
 
 #nav ul li {
@@ -74,7 +81,7 @@ html, body {
 #nav .button div {
     width: 35px;
     height: 5px;
-    background-color: #ebebeb;
+    background-color: #3b3b3b;
     margin: 6px 0;
 }
 
@@ -96,9 +103,10 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: var(--nav-bg-color, #CCC);
-    text-align: center;
+    /* text-align: center; */
     width: 200px;
     height: default;
+    border-width: 0 1px 0 0;
 }
 
 #nav ul li:not(:first-child) {

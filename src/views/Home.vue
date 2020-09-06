@@ -4,8 +4,8 @@
             <img id="slideshow" src="../assets/1.jpeg">
         </div>
         <div id="right-pane">
-            <h1>Portal ERE e EEAD</h1>
-            <p>Síntese</p>
+            <h1>COVID-19 E A EDUCAÇÃO</h1>
+            <p>O que a pandemia de COVID-19 tem a ver com o projeto de precarização da educação pública?</p>
         </div>
     </div>
 </template>
@@ -23,7 +23,6 @@
 }
 
 .wrapper {
-    height: 100%;
     background: #111;
     overflow: hidden;
 }
@@ -55,7 +54,8 @@ h1 {
 }
 
 #right-pane {
-    width: 400px;
+    width: 500px;
+    padding: 50px;
     height: 100%;
     border-width: 0 0 0 1px;
 }
