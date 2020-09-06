@@ -45,6 +45,7 @@ img {
 
 #a-luta {
     padding: 50px;
+    overflow: all;
 }
 
 
