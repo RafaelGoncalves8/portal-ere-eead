@@ -31,8 +31,12 @@
     --main-font-family: 'Karla';
 }
 
-p {
-    font-family: 'Karla';
+p, li {
+    font-family: 'Karla', serif;
+}
+
+#nav li {
+    font-family: 'Rubik', Arial, sans-serif;
 }
 
 h1 {
