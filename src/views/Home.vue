@@ -32,7 +32,7 @@
     flex-direction: column;
     align-items: center;
     justify: space-around;
-    background-color: #f7db04;
+    background-color: #F0A202;
     border-style: solid;
     border-width: 1px 0 0 0;
     padding: 30px;
@@ -49,12 +49,12 @@ h1 {
 @media screen and (min-width: 768px) {
 .content {
     flex-direction: row;
-    width: calc(100% - 200px);
+    width: calc(100% - 150px);
     height: 100%;
 }
 
 #right-pane {
-    width: 500px;
+    min-width: 300px;
     padding: 50px;
     height: 100%;
     border-width: 0 0 0 1px;
@@ -70,9 +70,9 @@ h1 {
             return {
                 i: 0,
                 imgsrc: [
-                    "/assets/1.jpeg",
-                    "/assets/2.jpeg",
-                    "/assets/3.jpeg",
+                    "../assets/1.jpeg",
+                    "../assets/2.jpeg",
+                    "../assets/3.jpeg",
                     ]
             };
         },
