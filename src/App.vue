@@ -9,7 +9,6 @@
             </ul>
             <a href="javascript:void(0);" class="showmenu" v-on:click="myFunction()">
             <div class="button">
-
                 <div></div>
                 <div></div>
                 <div></div> 
@@ -29,9 +28,9 @@
 }
 
 html, body {
-    margin: 0px;
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 
 #nav {
@@ -45,7 +44,7 @@ html, body {
 }
 
 #nav ul li {
-    text-align: center;
+    /* text-align: center; */
 }
 
 #nav ul li:not(:first-child) {
@@ -69,7 +68,7 @@ html, body {
 
 #nav ul li {
     display: block;
-    padding: 10px;
+    padding: 15px;
 }
 
 #nav .button div {
@@ -104,6 +103,10 @@ html, body {
 
 #nav ul li:not(:first-child) {
     display: block;
+}
+
+#nav .button {
+    display: none;
 }
 }
 </style>
