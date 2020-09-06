@@ -81,7 +81,7 @@ html, body {
 
 #app {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
     background-color: var(--main-bg-color, #EEE);
     font-family: var(--main-font-family, Helvetica, sans-serif);
@@ -89,6 +89,10 @@ html, body {
 }
 
 @media screen and (min-width: 768px) {
+#app {
+    flex-direction: row;
+}
+
 #nav {
     display: flex;
     flex-direction: column;
