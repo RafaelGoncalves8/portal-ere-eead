@@ -6,7 +6,7 @@
         <div class="color"></div>
         <div class="wrapper" id="contato">
             <h1>Participe da discussão!</h1>
-            <a href="aminoapps.com/c/EREEAD">
+            <a href="http://aminoapps.com/c/EREEAD">
             <div class="button">
             <p>Forum</p>
             </div>
