@@ -20,11 +20,23 @@
 </template>
  
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap')
+
 :root {
     --main-bg-color: #EEE;
     --nav-bg-color: #CCC;
     --main-color: #222;
-    --main-font-family: Arial;
+    --main-font-family: 'Karla';
+}
+
+p {
+    font-family: 'Karla';
+}
+
+h1 {
+    font-family: 'Rubik', Arial, sans-serif;
 }
 
 html, body {
