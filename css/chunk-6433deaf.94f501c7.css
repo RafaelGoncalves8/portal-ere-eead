@@ -1,0 +1,1 @@
+.content{display:flex;flex-direction:column}.color{background-color:#d95d39;height:50px}img{filter:grayscale(100%);min-height:100px}.wrapper{background-color:#ddd;min-width:50%}#a-luta{padding:50px}@media screen and (min-width:768px){.content{flex-direction:row;width:calc(100% - 200px);height:100%}.color{width:50px;height:100%}#a-luta{padding:50px;min-width:300px}}
